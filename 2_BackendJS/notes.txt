@@ -1,0 +1,3 @@
+Que-> How to connect backend from frontend ?
+Ans-> here we use cors(cross orgin requests), it means that our this content can run on any server, and browser cann't allow all of them to take content access so in order to tell browser that which type of request have to get permit we use cors. Basically here we use proxy that tells browser -- request on /api means http://localhost:3000 so it doesn't matter from where request is comming 
+
