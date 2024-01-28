@@ -1,0 +1,6 @@
+while start working on project we first create files in a src folder.
+Now we create a .prettier file let understand the use of this file --> it enforces a consistence style by parsing our code and reprinting it with its own rules .
+
+# Dev-dependencies --> when we install packages for developemnt some of the packages are not used in production so we called them dev-dependencies.
+
+why we need to download dotenv --> it loads environment variables from a .env file into process.env
