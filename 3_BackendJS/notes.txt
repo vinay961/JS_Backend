@@ -4,3 +4,17 @@ Now we create a .prettier file let understand the use of this file --> it enforc
 # Dev-dependencies --> when we install packages for developemnt some of the packages are not used in production so we called them dev-dependencies.
 
 why we need to download dotenv --> it loads environment variables from a .env file into process.env
+
+
+now let us discuss about the process.exit() method --> it is used to forcefully terminate nodeJs process.
+process.exit()--> indicates successful termination
+process.exit()--> indicates an error or abnormal termination
+other non-zero number are used to represent different meaning or error conditions.
+
+"scripts": {
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+}
+why we define script like this ?
+-r dotenv/config  this part tell nodeJs to require dotenv package and load environment variable form .env file using dotenv/config module.
+The --experimental-json-modules flag specifically enables loading JSON files as ES modules. Basically enable to use import and export in nodejs.
+src/index.js --> this is entry point of our nodeJs application for which nodemon watch them.
